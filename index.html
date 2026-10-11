@@ -922,6 +922,14 @@ footer i:hover {
   font-size: 1rem;
 }
 
+.stat-passage .stat-img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto; /* 保持圖片原始比例，避免變形 */
+    display: block;
+    margin: 0 auto;
+}
+
 /*區分小框*/
 .stat-passage .smallBox {
   background-image: linear-gradient(150deg, var(--color1), var(--color2), var(--color3));
@@ -1144,6 +1152,7 @@ footer i:hover {
   margin: 1rem 0;
   font-size: 1rem;
 }
+
 
 
 /*# sourceMappingURL=style.css.map */
@@ -1453,7 +1462,7 @@ Setting.addList("theme", {
 &lt;div class=&quot;box&quot;&gt;
 &lt;div class=&quot;stat-group&quot;&gt;
 &lt;div class=&quot;smallBox&quot;&gt;
-	&lt;img src=&quot;./picture/profile/Faye.png&quot;&gt;
+	&lt;img src=&quot;./picture/profile/Faye.png&quot; class=&quot;stat-img&quot;&gt;
 &lt;h2&gt;妃伊&lt;/h2&gt;
 &lt;h3&gt;Faye&lt;/h3&gt;
     &lt;!-- 特徵 --&gt;
@@ -1469,7 +1478,7 @@ Setting.addList("theme", {
 &lt;/div&gt;
 
 &lt;div class=&quot;smallBox&quot;&gt;
-&lt;img src=&quot;./picture/profile/Betty.png&quot;&gt;
+&lt;img src=&quot;./picture/profile/Betty.png&quot; class=&quot;stat-img&quot;&gt;
 &lt;h2&gt;貝蒂&lt;/h2&gt;
 &lt;h3&gt;Betty&lt;/h3&gt;
     &lt;!-- 特徵 --&gt;
@@ -1485,7 +1494,7 @@ Setting.addList("theme", {
 &lt;/div&gt;
 
 &lt;div class=&quot;smallBox&quot;&gt;
-&lt;img src=&quot;./picture/profile/Kate.png&quot;&gt;
+&lt;img src=&quot;./picture/profile/Kate.png&quot; class=&quot;stat-img&quot;&gt;
 &lt;h2&gt;凱特&lt;/h2&gt;
 &lt;h3&gt;Kate&lt;/h3&gt;
     &lt;!-- 特徵 --&gt;
@@ -1501,7 +1510,7 @@ Setting.addList("theme", {
 &lt;/div&gt;
 
 &lt;div class=&quot;smallBox&quot;&gt;
-&lt;img src=&quot;./picture/profile/Natasha.png&quot;&gt;
+&lt;img src=&quot;./picture/profile/Natasha.png&quot; class=&quot;stat-img&quot;&gt;
 &lt;h2&gt;娜塔莎&lt;/h2&gt;
 &lt;h3&gt;Natasha&lt;/h3&gt;
     &lt;!-- 特徵 --&gt;
@@ -1522,7 +1531,7 @@ Setting.addList("theme", {
 &lt;div class=&quot;box&quot;&gt;
 &lt;div class=&quot;stat-group&quot;&gt;
 &lt;div class=&quot;smallBox&quot;&gt;
-	&lt;img src=&quot;./picture/profile/Warren.png&quot;&gt;
+	&lt;img src=&quot;./picture/profile/Warren.png&quot; class=&quot;stat-img&quot;&gt;
 &lt;h2&gt;沃倫&lt;/h2&gt;
 &lt;h3&gt;Warren&lt;/h3&gt;
     &lt;!-- 特徵 --&gt;
@@ -1538,7 +1547,7 @@ Setting.addList("theme", {
 &lt;/div&gt;
 
 &lt;div class=&quot;smallBox&quot;&gt;
-&lt;img src=&quot;./picture/profile/Logan.png&quot;&gt;
+&lt;img src=&quot;./picture/profile/Logan.png&quot; class=&quot;stat-img&quot;&gt;
 &lt;h2&gt;羅根&lt;/h2&gt;
 &lt;h3&gt;Logan&lt;/h3&gt;
     &lt;!-- 特徵 --&gt;
@@ -1554,7 +1563,7 @@ Setting.addList("theme", {
 &lt;/div&gt;
 
 &lt;div class=&quot;smallBox&quot;&gt;
-&lt;img src=&quot;./picture/profile/Terry.png&quot;&gt;
+&lt;img src=&quot;./picture/profile/Terry.png&quot; class=&quot;stat-img&quot;&gt;
 &lt;h2&gt;泰瑞&lt;/h2&gt;
 &lt;h3&gt;Terry&lt;/h3&gt;
     &lt;!-- 特徵 --&gt;
@@ -1570,7 +1579,7 @@ Setting.addList("theme", {
 &lt;/div&gt;
 
 &lt;div class=&quot;smallBox&quot;&gt;
-&lt;img src=&quot;./picture/profile/Ryker.png&quot;&gt;
+&lt;img src=&quot;./picture/profile/Ryker.png&quot; class=&quot;stat-img&quot;&gt;
 &lt;h2&gt;萊克&lt;/h2&gt;
 &lt;h3&gt;Ryker&lt;/h3&gt;
     &lt;!-- 特徵 --&gt;
@@ -1656,7 +1665,7 @@ Setting.addList("theme", {
 &lt;div class=&quot;content&quot;&gt;
 
 &lt;!-- STORY TITLE --&gt;
-&lt;h1 class=&quot;story-title&quot;&gt;Toruble Friends&lt;/h1&gt;
+&lt;h1 class=&quot;story-title&quot;&gt;Trouble Friends&lt;/h1&gt;
 
 &lt;!-- ICON --&gt;
 &lt;i class=&quot;fab fa-pagelines&quot;&gt;&lt;/i&gt;
@@ -1701,7 +1710,7 @@ Setting.addList("theme", {
 &lt;a href=&quot;KO-FI URL HERE&quot; target=&quot;_blank&quot;&gt;&lt;i class=&quot;fas fa-hand-holding-heart&quot;&gt;&lt;/i&gt;&lt;/a&gt;</tw-passagedata><tw-passagedata pid="9" name="story title" tags="nobr edit" position="212,203" size="100,100">&lt;!-- TITLE ON THE TOP OF THE PAGE IS POPULATED HERE --&gt;
 
 &lt;!-- STORY TITLE --&gt;
-&lt;h1&gt;Toruble Friends&lt;/h1&gt;
+&lt;h1&gt;Trouble Friends&lt;/h1&gt;
 
 &lt;!-- ICON --&gt;
 &lt;i class=&quot;fab fa-pagelines&quot;&gt;&lt;/i&gt;
@@ -1716,7 +1725,7 @@ Setting.addList("theme", {
 &lt;br&gt;
 
 &lt;!-- STORY TITLE --&gt;
-&lt;h1 class=&quot;story-title&quot;&gt;Toruble Friends&lt;/h1&gt;
+&lt;h1 class=&quot;story-title&quot;&gt;Trouble Friends&lt;/h1&gt;
 
 &lt;!-- ICON --&gt;
 &lt;i class=&quot;fab fa-pagelines&quot;&gt;&lt;/i&gt;
