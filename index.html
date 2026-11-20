@@ -1157,7 +1157,14 @@ footer i:hover {
   font-size: 1rem;
 }
 
-
+.video-player {
+  max-height: 85vh;     /* 限制高度最多佔視窗的 85% */
+  max-height: 85dvh;    /* 支援新版手機瀏覽器，精準扣除網址列高度 */
+  width: auto;          /* 寬度隨高度等比例縮放 */
+  max-width: 100%;      /* 避免在手機版寬度超出螢幕 */
+  display: block;       /* 消除影片下方預設的微小空白 */
+  margin: 0 auto;       /* 讓影片在畫面中水平置中 */
+}
 
 
 /*# sourceMappingURL=style.css.map */
@@ -1461,6 +1468,7 @@ Setting.addList("theme", {
 </tw-passagedata><tw-passagedata pid="3" name="stat page 1" tags="nobr noreturn edit stat-passage" position="0,325" size="100,100">&lt;div class=&quot;box header&quot;&gt;
 &lt;h1&gt;角色介紹&lt;/h1&gt;
 &lt;span class=&quot;star&quot;&gt;✦&lt;/span&gt;
+&lt;img src=&quot;./picture/profile/All_height.png&quot; class=&quot;stat-img&quot;&gt;
 &lt;/div&gt;
 
 &lt;!-- 女角部分 --&gt;
@@ -1932,19 +1940,15 @@ Your height is about average for someone your age.
 &#39;&#39;助教　沃倫　敬啟&#39;&#39;
 &lt;/i&gt;
 &lt;/div&gt;
-
 妃伊再次將信件從頭閱讀了一遍。
 與其說這是一封制式的入學通知，不如說更像是一封邀請函。
 第一頁以書信形式寫著簡短問候；第二頁則整理了校園位置、宿舍地址，以及開學報到流程與課程時程等資訊。
 確認宿舍地址後，她左右手各拖著一個行李箱，沿著校園道路慢慢前進。
 
-&lt;&lt;link &quot;🎨插圖-妃伊前往宿舍&quot;&gt;&gt;
-	&lt;&lt;toggleclass &quot;#02_FayeDorm&quot; &quot;hide&quot;&gt;&gt;
-&lt;&lt;/link&gt;&gt;
+&lt;&lt;link &quot;🎨插圖-妃伊前往宿舍&quot;&gt;&gt; &lt;&lt;toggleclass &quot;#02_FayeDorm&quot; &quot;hide&quot;&gt;&gt; &lt;&lt;/link&gt;&gt;
 &lt;span id=&quot;02_FayeDorm&quot; class=&quot;hide&quot;&gt;
 	&lt;img src=&quot;./picture/ch1/02_FayeDorm.png&quot; class=&quot;responsive-img&quot;&gt;
 &lt;/span&gt;
-
 夜色寧靜，只有行李輪子與石板路摩擦發出的細微聲響陪伴著她。
 走著走著，她的思緒也不由自主回到了幾個月前。
 
@@ -2120,8 +2124,8 @@ Your height is about average for someone your age.
 @@.turn-page;[[翻頁|1-1宿舍]]@@
 
 
-</tw-passagedata><tw-passagedata pid="15" name="1-1宿舍" tags="" position="625,400" size="100,100">
-行李箱輪子滾過石板路的聲音，忽然停了下來。
+
+</tw-passagedata><tw-passagedata pid="15" name="1-1宿舍" tags="" position="625,400" size="100,100">行李箱輪子滾過石板路的聲音，忽然停了下來。
 妃伊抬起頭。
 一棟三層樓高、外觀樸素潔淨的學生宿舍靜靜佇立在夜色之中。
 明亮燈火窗光從幾間房間透出，讓長途旅行後疲憊不堪的她，心裡莫名升起一絲安心。
@@ -2170,7 +2174,6 @@ Your height is about average for someone your age.
 &lt;&lt;button [[床位2|1-1床位2]]&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;button [[床位3|1-1床位3]]&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;button [[床位4|1-1床位4]]&gt;&gt;&lt;&lt;/button&gt;&gt;
-
 </tw-passagedata><tw-passagedata pid="16" name="1-1床位1" tags="" position="500,525" size="100,100">「離窗戶近一點……」
 「不要太靠近廁所……」
 「最好開門時第一眼看不到我……」
@@ -2191,7 +2194,6 @@ Your height is about average for someone your age.
 &lt;span id=&quot;BettyDorm&quot; class=&quot;hide&quot;&gt;
 	&lt;img src=&quot;./picture/ch1/05_BettyDorm.png&quot; class=&quot;responsive-img&quot;&gt;
 &lt;/span&gt;
-
 女子正準備開口。
 妃伊卻先一步睜大眼睛。
 「妳是貝蒂！」
@@ -2275,7 +2277,6 @@ Your height is about average for someone your age.
 &lt;span id=&quot;BettyDorm&quot; class=&quot;hide&quot;&gt;
 	&lt;img src=&quot;./picture/ch1/05_BettyDorm.png&quot; class=&quot;responsive-img&quot;&gt;
 &lt;/span&gt;
-
 女子正準備開口。
 妃伊卻先一步睜大眼睛。
 「妳是貝蒂！」
@@ -2338,7 +2339,6 @@ Your height is about average for someone your age.
 &lt;span id=&quot;BettyDorm&quot; class=&quot;hide&quot;&gt;
 	&lt;img src=&quot;./picture/ch1/05_BettyDorm.png&quot; class=&quot;responsive-img&quot;&gt;
 &lt;/span&gt;
-
 妃伊從角落探頭出來，睜大眼睛。
 「妳是貝蒂！」
 她驚喜地喊了出來。
@@ -2402,7 +2402,6 @@ Your height is about average for someone your age.
 &lt;span id=&quot;BettyDorm&quot; class=&quot;hide&quot;&gt;
 	&lt;img src=&quot;./picture/ch1/05_BettyDorm.png&quot; class=&quot;responsive-img&quot;&gt;
 &lt;/span&gt;
-
 女子正準備開口。
 妃伊卻先一步睜大眼睛。
 「妳是貝蒂！」
@@ -2548,7 +2547,6 @@ Your height is about average for someone your age.
 &lt;span id=&quot;University&quot; class=&quot;hide&quot;&gt;
 	&lt;img src=&quot;./picture/ch1/06_University.png&quot; class=&quot;responsive-img&quot;&gt;
 &lt;/span&gt;
-
 妃伊不禁停下腳步。
 「真漂亮……」
 她望著眼前的建築，忍不住笑了。
@@ -2632,7 +2630,6 @@ Your height is about average for someone your age.
 &lt;span id=&quot;LoganInit&quot; class=&quot;hide&quot;&gt;
 	&lt;img src=&quot;./picture/ch1/07_LoganInit.png&quot; class=&quot;responsive-img&quot;&gt;
 &lt;/span&gt;
-
 「早安。」
 男子坐在床邊的椅子上，平靜地向她打招呼。
 他穿著白襯衫、牛仔褲，還有一張完全符合妃伊審美喜好的臉。
@@ -2687,7 +2684,6 @@ Your height is about average for someone your age.
 今天的羅根穿搭跟平常很不一樣!
 他身上是一件剪裁俐落的黑色燕尾馬甲，不對稱的下襬製造獨特性。
 翻領處拼接著黑紅相間的菱格紋布料，張揚卻不顯俗氣，內搭的莓果紅襯衫讓整體配色多了一分神祕感。
-腰間垂掛著細緻的金屬鍊飾，隨著動作，古銅色十字架在漆黑修身長褲旁輕輕碰撞，發出細微清脆的聲響。
 
 &lt;&lt;link &quot;🎨插圖-有穿搭的羅根&quot;&gt;&gt;
 	&lt;&lt;toggleclass &quot;#LoganDress&quot; &quot;hide&quot;&gt;&gt;
@@ -2695,7 +2691,6 @@ Your height is about average for someone your age.
 &lt;span id=&quot;LoganDress&quot; class=&quot;hide&quot;&gt;
 	&lt;img src=&quot;./picture/ch1/08_LoganDress.png&quot; class=&quot;responsive-img&quot;&gt;
 &lt;/span&gt;
-
 妃伊眨了眨眼，低頭想想自己過去幫羅根買的衣服，永遠都是UNIQLO簡單的白T恤配藍色牛仔褲。
 她忽然產生一種微妙的愧疚感。
 「這是你自己搭的衣服嗎？」
@@ -2881,7 +2876,6 @@ Your height is about average for someone your age.
 &lt;span id=&quot;WarrenChurch&quot; class=&quot;hide&quot;&gt;
 	&lt;img src=&quot;./picture/ch1/09_WarrenChurch.png&quot; class=&quot;responsive-img&quot;&gt;
 &lt;/span&gt;
-
 「遠一點的區域還有更多風景，之後戶外課程時，我再向妳一一介紹。」
 妃伊笑著默默移開視線，心想憑著沃倫外表就已經夠像風景名勝了。
 這位臉蛋自帶浪漫濾鏡的助教實在逆天，再看下去有點影響思考能力。
@@ -2924,7 +2918,6 @@ Your height is about average for someone your age.
 &lt;span id=&quot;LF_Farm&quot; class=&quot;hide&quot;&gt;
 	&lt;img src=&quot;./picture/ch1/10_LF_Farm.png&quot; class=&quot;responsive-img&quot;&gt;
 &lt;/span&gt;
-
 「姊。」
 風聲中，羅根忽然開口。
 「我們為什麼要去牧場啊？」
@@ -2989,12 +2982,6 @@ Your height is about average for someone your age.
 羅根表情瞬間凝固，一股不祥預感緩緩升起。
 「……什麼漫畫？」
 「愛的小天使啊！你不知道嗎?」
-&lt;&lt;link &quot;🎨插圖-愛的小天使&quot;&gt;&gt;
-	&lt;&lt;toggleclass &quot;#OriginalAngel&quot; &quot;hide&quot;&gt;&gt;
-&lt;&lt;/link&gt;&gt;
-&lt;span id=&quot;OriginalAngel&quot; class=&quot;hide&quot;&gt;
-	&lt;img src=&quot;./picture/ch1/10_OriginalAngel.png&quot; class=&quot;responsive-img&quot;&gt;
-&lt;/span&gt;
 羅根一臉茫然，事情又往奇怪的方向發展了。
 「...姊，我只有繼承你的常識，你看過的漫畫之類的個人記憶我不會知道，那個漫畫在演什麼?」
 「就是女主角跟男主角分別是表姊表弟的關係，他們接受愛神委託，兩人像愛神邱比特那樣，觀察周圍的人有沒有緣分，幫忙促成戀愛。」
@@ -3037,6 +3024,13 @@ Your height is about average for someone your age.
 「什麼事？」
 妃伊轉身，雙手交叉在胸前，擺出誇張的姿勢。
 「我們要練習一下『愛的小天使』出任務前的出動姿勢！」
+
+&lt;&lt;link &quot;🎨插圖-愛的小天使&quot;&gt;&gt;
+	&lt;&lt;toggleclass &quot;#OriginalAngel&quot; &quot;hide&quot;&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+&lt;span id=&quot;OriginalAngel&quot; class=&quot;hide&quot;&gt;
+	&lt;img src=&quot;./picture/ch1/10_OriginalAngel.png&quot; class=&quot;responsive-img&quot;&gt;
+&lt;/span&gt;
 像是突然打開熱情開關似的，妃伊示範了兩人應該要有的指定台詞與動作，羅根看的目瞪口呆。
 「我們一定要做這個嗎?」
 妃伊一臉震驚，彷彿羅根問了什麼不可思議的問題。
@@ -3059,6 +3053,13 @@ Your height is about average for someone your age.
 她握著房卡的手頓時僵住。
 『慘了，我這才意識到我要跟一群外國人打交道了。』
 土撥鼠式慘叫在妃伊內心迴響著。
+&lt;&lt;link &quot;🎦影片-土撥鼠尖叫&quot;&gt;&gt;
+	&lt;&lt;toggleclass &quot;#Scream&quot; &quot;hide&quot;&gt;&gt;
+&lt;&lt;/link&gt;&gt;
+&lt;span id=&quot;Scream&quot; class=&quot;hide&quot;&gt;
+	&lt;video class=&quot;video-player&quot; src=&quot;./vedio/ch1/01_Scream.mp4&quot; controls&gt;&lt;/video&gt;
+&lt;/span&gt;
+
 『我用日語母語都沒成功交到多少朋友，現在還要用英語跟別人尬聊?』
 握著房卡的手開始發抖，妃伊活像著面臨大考而緊張不已的考生。
 『我當初怎麼不說神諭是要我去考哈佛，這樣還比較簡單一點?』
@@ -3081,7 +3082,6 @@ Your height is about average for someone your age.
 &lt;span id=&quot;KateDorm&quot; class=&quot;hide&quot;&gt;
 	&lt;img src=&quot;./picture/ch1/11_KateDorm.png&quot; class=&quot;responsive-img&quot;&gt;
 &lt;/span&gt;
-
 「妳、妳好。」妃伊差點咬到舌頭。
 「我是妃伊，很高興認識妳。」
 「我是凱特，是貝蒂的姊姊。」金髮少女笑著說。
@@ -3142,7 +3142,6 @@ Your height is about average for someone your age.
 &lt;span id=&quot;Manner&quot; class=&quot;hide&quot;&gt;
 	&lt;img src=&quot;./picture/ch1/12_Manner.png&quot; class=&quot;responsive-img&quot;&gt;
 &lt;/span&gt;
-
 妃伊接過餅乾，打開來咬了一口，甜蜜的巧克力榛果香氣在口中散開，剛好是妃伊喜歡的甜度。
 「謝謝～這個餅乾好好吃喔~ 下次我要買一盒回來。」
 「還有喔~妳知道貝蒂在那間超市遇到誰嗎？」
@@ -3166,7 +3165,6 @@ Your height is about average for someone your age.
 &lt;span id=&quot;TerryCafe&quot; class=&quot;hide&quot;&gt;
 	&lt;img src=&quot;./picture/ch1/13_TerryCafe.png&quot; class=&quot;responsive-img&quot;&gt;
 &lt;/span&gt;
-
 影片裡，一名金髮青年正坐在法國街頭咖啡廳。
 陽光落在他有些凌亂的金色頭髮上，藍色眼睛明亮得像晴朗海面。
 他笑容燦爛地對鏡頭打招呼，接著開始說明自己這次受委託尋找失蹤藝術品的經過。
@@ -3208,15 +3206,14 @@ Your height is about average for someone your age.
 
 &lt;&lt;button [[土壤與地下水|1-3土壤與地下水]]&gt;&gt;&lt;&lt;/button&gt;&gt;
 &lt;&lt;button [[挪威語入門|1-3挪威語入門]]&gt;&gt;&lt;&lt;/button&gt;&gt;
-</tw-passagedata><tw-passagedata pid="27" name="1-3土壤與地下水" tags="" position="575,1525" size="100,100">
-妃伊想了想，都難得來國外了，坐在教室裡多可惜。
+</tw-passagedata><tw-passagedata pid="27" name="1-3土壤與地下水" tags="" position="575,1525" size="100,100">妃伊想了想，都難得來國外了，坐在教室裡多可惜。
 
 來都來了，怎麼不享受戶外風景呢?
 《土壤與地下水》雖然是地質系的課程，跟她的專業完全搭不上關係。
 但是就衝著戶外教學，無論如何也要搶這堂課~!
 
 &lt;&lt;set $classChoice to &quot;1-6土壤與地下水&quot;&gt;&gt;
-
+&lt;&lt;set $End_C to $End_C + 1&gt;&gt;
 @@.turn-page;[[翻頁|1-3就寢]]@@</tw-passagedata><tw-passagedata pid="28" name="1-3挪威語入門" tags="" position="675,1525" size="100,100">妃伊想了想，如果還想要治療羅根又要兼顧工作還要上課，選這種營養學分才是明智之舉。
 
 而且能聽得懂當地語言，生活應該會更方便一些。
@@ -3224,7 +3221,7 @@ Your height is about average for someone your age.
 說不定之後還會有什麼場合能派上用場? 總之學起來應該不虧。
 
 &lt;&lt;set $classChoice to &quot;1-6挪威語入門&quot;&gt;&gt;
-
+&lt;&lt;set $End_E to $End_E + 1&gt;&gt;
 @@.turn-page;[[翻頁|1-3就寢]]@@</tw-passagedata><tw-passagedata pid="29" name="1-3就寢" tags="" position="625,1650" size="100,100">「妃伊你在研究選課呀？」
 凱特忽然從旁邊湊過來，妃伊嚇了一跳，趕緊把視線從螢幕上移開。
 「嗯……對，想看看有什麼課可以選。」
@@ -3315,7 +3312,6 @@ Your height is about average for someone your age.
 &lt;span id=&quot;LB_Classroom&quot; class=&quot;hide&quot;&gt;
 	&lt;img src=&quot;./picture/ch1/15_LB_Classroom.png&quot; class=&quot;responsive-img&quot;&gt;
 &lt;/span&gt;
-
 「怎麼樣？是不是很像妳失散多年的親人？」
 貝蒂輕輕一笑。
 「如果只看外表，確實有一點。」
@@ -3356,7 +3352,6 @@ Your height is about average for someone your age.
 &lt;span id=&quot;KB_Classroom&quot; class=&quot;hide&quot;&gt;
 	&lt;img src=&quot;./picture/ch1/15_KB_Classroom.png&quot; class=&quot;responsive-img&quot;&gt;
 &lt;/span&gt;
-
 「然後妳和他……是姊弟？」手指又轉向妃伊與羅根。
 
 &lt;&lt;link &quot;🎨插圖-羅根與妃伊姊弟&quot;&gt;&gt;
@@ -3365,7 +3360,6 @@ Your height is about average for someone your age.
 &lt;span id=&quot;LF_Classroom&quot; class=&quot;hide&quot;&gt;
 	&lt;img src=&quot;./picture/ch1/14_LF_Classroom.png&quot; class=&quot;responsive-img&quot;&gt;
 &lt;/span&gt;
-
 泰瑞眉頭皺在一起，一臉無法理解的樣子。
 妃伊心裡咯噔一下，自己的東方人面孔跟魔藥製作出來的西方人外貌實在是差太多，她怎麼沒想過、要怎麼跟旁人解釋這種基因血統問題。
 最後只好硬著頭皮說：
@@ -3401,7 +3395,6 @@ Your height is about average for someone your age.
 &lt;span id=&quot;Ryker_Classroom&quot; class=&quot;hide&quot;&gt;
 	&lt;img src=&quot;./picture/ch1/16_Ryker_Classroom.png&quot; class=&quot;responsive-img&quot;&gt;
 &lt;/span&gt;
-
 妃伊原本以為他只是單純不想和同學交談，沒想到他其實從頭到尾都在聽。
 「呃……我們算是關係比較遠的親戚。」
 黑髮男子挑眉。
@@ -3489,7 +3482,6 @@ Your height is about average for someone your age.
 &lt;span id=&quot;Handbook&quot; class=&quot;hide&quot;&gt;
 	&lt;img src=&quot;./picture/ch1/17_Handbook.png&quot; class=&quot;responsive-img&quot;&gt;
 &lt;/span&gt;
-
 裡面除了基本的學校資訊之外，還有一整年的月曆。
 然而，其中某一天卻被特別標示了出來。
 ——星期三。
@@ -3549,7 +3541,6 @@ Your height is about average for someone your age.
 &lt;span id=&quot;Natasha_Classroom&quot; class=&quot;hide&quot;&gt;
 	&lt;img src=&quot;./picture/ch1/18_Natasha_Classroom.png&quot; class=&quot;responsive-img&quot;&gt;
 &lt;/span&gt;
-
 她站在門口，淡紫色的眼眸迅速掃過整間教室。
 沒有詢問、沒有解釋，也沒有顯露出一絲因為遲到而產生的慌張。
 她只是選了一個距離出口較近的位置，拉開椅子坐下。
@@ -4049,7 +4040,6 @@ Your height is about average for someone your age.
 &lt;span id=&quot;LF_Angel&quot; class=&quot;hide&quot;&gt;
 	&lt;img src=&quot;./picture/ch1/19_LF_AngelPose.png&quot; class=&quot;responsive-img&quot;&gt;
 &lt;/span&gt;
-
 如果此時有攝影機拍攝，背景大概還需要配上幾道閃光、煙霧特效，以及一段氣勢磅礡的出場音樂。
 可惜現實中只有安靜的走廊，以及窗外一隻恰好飛過的鳥。
 羅根看了一眼窗外。
@@ -4267,8 +4257,9 @@ Your height is about average for someone your age.
 	&lt;&lt;toggleclass &quot;#Curling&quot; &quot;hide&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;
 &lt;span id=&quot;Curling&quot; class=&quot;hide&quot;&gt;
-	&lt;video src=&quot;./vedio/ch1/02_Curling.mp4&quot; width=&quot;100%&quot; controls&gt;&lt;/video&gt;
+	&lt;video class=&quot;video-player&quot; src=&quot;./vedio/ch1/02_Curling.mp4&quot;  controls&gt;&lt;/video&gt;
 &lt;/span&gt;
+
 「哇！」
 妃伊睜大眼睛。
 「你投得好準！」
